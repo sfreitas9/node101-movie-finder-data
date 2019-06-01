@@ -79,6 +79,7 @@ describe("server module", function() {
       .end((err, res) => {
         expect(res).to.have.status(200);
         expect(err).to.be.null;
+        console.log(res.body);
         expect(res.body.Title).to.equal('Baby Driver');
         done();
     })
